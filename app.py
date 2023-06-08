@@ -39,7 +39,7 @@ st.markdown(html_temp, unsafe_allow_html=True)
 
 if st.checkbox("Deskripsi"):
     	'''
-   	Sex	Form Masukkan Jenis Kelamin (Laki-laki atau Perempuan)
+   - Sex: Form Masukkan Jenis Kelamin (Laki-laki atau Perempuan)
 	Age	Form Masukkan usia berupa angka bilangan bulat 
 	contoh: 35 (untuk yang berusia 35)
 	Height	Form Height merupakan tinggi pasien, berupa angka bilangan bulat 
