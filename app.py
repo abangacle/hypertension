@@ -44,11 +44,11 @@ if st.checkbox("Deskripsi"):
 - Height:	Form Height merupakan tinggi pasien, berupa angka bilangan bulat, contoh: 159 (untuk yang memiliki tinggi 159 cm) (contoh: 159).
 - Weight: 	Form Weight merupakan berat pasien, berupa angka bilangan bulat, contoh: 64 (untuk yang memiliki berat badan 64 kg) (contoh: 64).
 - Systolic Bood Pressure:	Form Systolic Bood Pressure merupakan Tekanan darah sistolik berupa angka bilangan bulat. contoh: 160
-- Diastolic Blood Pressure	Form Diastolik Bood Pressure merupakan Tekanan Darah Diastolik berupa angka bilangan bulat.
+- Diastolic Blood Pressure:	Form Diastolik Bood Pressure merupakan Tekanan Darah Diastolik berupa angka bilangan bulat.
 	contoh: 87
-- Heart Rate	Form Heart Rate merupakan Tekanan Darah, berupa angka bilangan bulat 
+- Heart Rate:	Form Heart Rate merupakan Tekanan Darah, berupa angka bilangan bulat 
 	contoh: 79
-- BMI	Form BMI merupakan Indeks massa tubuh, berupa bilangan bulat
+- BMI:	Form BMI merupakan Indeks massa tubuh, berupa bilangan bulat
 	Contoh: 27
 
 
