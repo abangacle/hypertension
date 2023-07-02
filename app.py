@@ -5,14 +5,12 @@ import os
 import pickle
 import warnings
 
-# Kolom atribut / fitur
+# Data columns
 feature_names_best = ['Sex', 'Age', 'Height', 'Weight', 'Systolic Blood Pressure','Diastolic Blood Pressure', 'Heart Rate', 'BMI']
-# Merubah jenis kelamin kedalam angka
+
 gender_dict = {"Laki-laki":1,"Perempuan":0}
-# Merubah Ya dan Tidak kedalam angka
 feature_dict = {"Ya":1,"Tidak":0}
 
-# Load_model digunakan untuk memanggil pickle
 def load_model(modelfile):
 	loaded_model = pickle.load(open(modelfile, 'rb'))
 	return loaded_model
@@ -28,7 +26,7 @@ def get_fvalue(val):
 		if val == key:
 			return value 
 
-# Judul
+# title
 html_temp = """
 <div>
 <h1 style="color:#FF6E31;text-align:left;">
@@ -41,22 +39,25 @@ st.markdown(html_temp, unsafe_allow_html=True)
 
 if st.checkbox("Deskripsi"):
     	'''
-        - Sex: Form Masukkan Jenis Kelamin (Laki-laki atau Perempuan)
-        - Age:	Form Masukkan usia berupa angka bilangan bulat, contoh: 35 (untuk yang berusia 35)
-        - Height:	Form Height merupakan tinggi pasien, berupa angka bilangan bulat, contoh: 159 (untuk yang memiliki tinggi 159 cm) (contoh: 159).
-        - Weight: 	Form Weight merupakan berat pasien, berupa angka bilangan bulat, contoh: 64 (untuk yang memiliki berat badan 64 kg) (contoh: 64).
-        - Systolic Bood Pressure:	Form Systolic Bood Pressure merupakan Tekanan darah sistolik berupa angka bilangan bulat. contoh: 160
-        - Diastolic Blood Pressure:	Form Diastolik Bood Pressure merupakan Tekanan Darah Diastolik berupa angka bilangan bulat.
-            contoh: 87
-        - Heart Rate:	Form Heart Rate merupakan Tekanan Darah, berupa angka bilangan bulat 
-            contoh: 79
-        - BMI:	Form BMI merupakan Indeks massa tubuh, berupa bilangan bulat
-            Contoh: 27
-		'''
+   - Sex: Form Masukkan Jenis Kelamin (Laki-laki atau Perempuan)
+- Age:	Form Masukkan usia berupa angka bilangan bulat, contoh: 35 (untuk yang berusia 35)
+- Height:	Form Height merupakan tinggi pasien, berupa angka bilangan bulat, contoh: 159 (untuk yang memiliki tinggi 159 cm) (contoh: 159).
+- Weight: 	Form Weight merupakan berat pasien, berupa angka bilangan bulat, contoh: 64 (untuk yang memiliki berat badan 64 kg) (contoh: 64).
+- Systolic Bood Pressure:	Form Systolic Bood Pressure merupakan Tekanan darah sistolik berupa angka bilangan bulat. contoh: 160
+- Diastolic Blood Pressure:	Form Diastolik Bood Pressure merupakan Tekanan Darah Diastolik berupa angka bilangan bulat.
+	contoh: 87
+- Heart Rate:	Form Heart Rate merupakan Tekanan Darah, berupa angka bilangan bulat 
+	contoh: 79
+- BMI:	Form BMI merupakan Indeks massa tubuh, berupa bilangan bulat
+	Contoh: 27
 
-# membuat sidebar
+
+		'''
+# Logo
+
 st.sidebar.title("Form Prediksi")
 
+#['Sex', 'Age', 'Height', 'Weight', 'Systolic Blood Pressure','Diastolic Blood Pressure', 'Heart Rate', 'BMI']
 
 # Male or Female
 Sex = st.sidebar.radio("Jenis Kelamin",tuple(gender_dict.keys()))
