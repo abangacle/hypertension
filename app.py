@@ -112,28 +112,28 @@ if st.button('Prediksi Penyakit'):
 			<h4 style="color:#FF6E31;">
 			Normal</h4>
 			</div>
-			"""
+			""",
     elif pred == 1:
         diagnosis = """
 			<div>
 			<h4 style="color:#FF6E31;">
 			Prehypertension</h4>
 			</div>
-			"""
+			""",
     elif pred == 2:
         diagnosis = """
 			<div>
 			<h4 style="color:#FF6E31;">
 			Stage 1 Hypertension</h4>
 			</div>
-			"""
+			""",
     elif pred == 3:
         diagnosis = """
 			<div>
 			<h4 style="color:#FF6E31;">
 			Stage 2 Hypertension</h4>
 			</div>
-			"""
+			""",
         
 st.success(diagnosis)
 
