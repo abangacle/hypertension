@@ -107,33 +107,13 @@ if st.button('Prediksi Penyakit'):
     pred = loaded_model.predict(feature_list)
     
     if pred == 0:
-        diagnosis = """
-			<div>
-			<h4 style="color:#FF6E31;">
-			Normal</h4>
-			</div>
-			""",
+        diagnosis = 'Normal'
     elif pred == 1:
-        diagnosis = """
-			<div>
-			<h4 style="color:#FF6E31;">
-			Prehypertension</h4>
-			</div>
-			""",
+        diagnosis = 'Prehypertension'
     elif pred == 2:
-        diagnosis = """
-			<div>
-			<h4 style="color:#FF6E31;">
-			Stage 1 Hypertension</h4>
-			</div>
-			""",
+        diagnosis = 'Stage 1 Hypertension'
     elif pred == 3:
-        diagnosis = """
-			<div>
-			<h4 style="color:#FF6E31;">
-			Stage 2 Hypertension</h4>
-			</div>
-			""",
+        diagnosis = 'Stage 2 Hypertension'
         
 st.success(diagnosis)
 
